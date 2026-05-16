@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminKit — Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0d1117; color: #e6edf3; min-height: 100vh; }
+        header { background: #161b22; border-bottom: 1px solid #30363d; padding: 20px 24px; display: flex; align-items: center; gap: 14px; }
+        header h1 { font-size: 22px; font-weight: 700; }
+        header span { font-size: 13px; color: #8b949e; }
+        nav { background: #161b22; border-bottom: 1px solid #30363d; padding: 0 24px; }
+        nav a { color: #8b949e; text-decoration: none; padding: 12px 16px; font-size: 14px; border-bottom: 2px solid transparent; display: inline-block; }
+        nav a.active, nav a:hover { color: #58a6ff; border-bottom-color: #58a6ff; }
+        .container { max-width: 760px; margin: 40px auto; padding: 0 24px; }
+        h2 { font-size: 24px; margin-bottom: 8px; }
+        .subtitle { color: #8b949e; font-size: 14px; margin-bottom: 32px; }
+        .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 24px; margin-bottom: 20px; }
+        .card h3 { font-size: 16px; margin-bottom: 12px; }
+        .card p, .card li { color: #8b949e; font-size: 14px; line-height: 1.75; }
+        .card ul { padding-left: 18px; }
+        .card ul li { margin-bottom: 6px; }
+        a.email { color: #58a6ff; text-decoration: none; }
+        a.email:hover { text-decoration: underline; }
+        footer { text-align: center; color: #8b949e; font-size: 13px; padding: 40px 24px; border-top: 1px solid #30363d; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>AdminKit</h1>
+            <span>Network &amp; Security Toolkit</span>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Support</a>
+        <a href="privacy.html" class="active">Privacy Policy</a>
+    </nav>
+    <div class="container">
+        <h2>Privacy Policy</h2>
+        <p class="subtitle">Last updated: May 2026</p>
+
+        <div class="card">
+            <h3>Overview</h3>
+            <p>AdminKit is built with privacy as a default. We do not collect, store, or transmit any personal information. There are no analytics SDKs, no advertising SDKs, and no tracking of any kind in this app.</p>
+        </div>
+
+        <div class="card">
+            <h3>Data We Collect</h3>
+            <p>None. AdminKit does not collect personal data, usage statistics, crash reports, or any other information from your device.</p>
+        </div>
+
+        <div class="card">
+            <h3>Local Storage</h3>
+            <p>Connection profiles (hostnames, usernames, ports) are stored locally on your device. Passwords and private keys are stored exclusively in your device's Keychain and never leave your device unencrypted.</p>
+        </div>
+
+        <div class="card">
+            <h3>Network Requests</h3>
+            <p>AdminKit only contacts external servers when you explicitly use a feature that requires it. The following third-party services may be contacted:</p>
+            <br>
+            <ul>
+                <li><strong>ipapi.co</strong> — IP geolocation lookups</li>
+                <li><strong>dns.cloudflare.com</strong> — DNS over HTTPS queries</li>
+                <li><strong>speed.cloudflare.com</strong> — Speed test downloads/uploads</li>
+                <li><strong>crt.sh</strong> — Certificate transparency log searches</li>
+                <li><strong>webhook.site</strong> — Temporary webhook endpoint creation</li>
+                <li><strong>shodan.io</strong> — Intelligence queries (requires your API key)</li>
+                <li><strong>nvd.nist.gov</strong> — CVE vulnerability database lookups</li>
+            </ul>
+            <br>
+            <p>No data is sent to these services unless you actively initiate a lookup. AdminKit's own servers are never contacted.</p>
+        </div>
+
+        <div class="card">
+            <h3>SSH, SFTP &amp; FTP</h3>
+            <p>Connections are made directly from your device to the servers you specify. No traffic is proxied through AdminKit servers. Credentials are stored in the system Keychain and are never transmitted to anyone except the server you are connecting to.</p>
+        </div>
+
+        <div class="card">
+            <h3>Local Network</h3>
+            <p>Features such as Bonjour Browser, Port Scanner, Wake-on-LAN, and Ping operate on your local network. This data stays on your device and is never uploaded anywhere.</p>
+        </div>
+
+        <div class="card">
+            <h3>Permissions</h3>
+            <ul>
+                <li><strong>Network access</strong> — Required for all network features</li>
+                <li><strong>Local network access</strong> — Required for Bonjour Browser and LAN-based tools</li>
+                <li><strong>Location Services (macOS)</strong> — Required to read Wi-Fi SSID on macOS 12+</li>
+                <li><strong>File access</strong> — Required for importing/exporting connection profiles and SSH key files</li>
+                <li><strong>Serial port (macOS)</strong> — Required for USB console connections</li>
+            </ul>
+            <br>
+            <p>No permission is requested beyond what is functionally necessary.</p>
+        </div>
+
+        <div class="card">
+            <h3>Children's Privacy</h3>
+            <p>AdminKit is a professional tool intended for network administrators and developers. It is not directed at children under 13 and does not knowingly collect data from minors.</p>
+        </div>
+
+        <div class="card">
+            <h3>Changes to This Policy</h3>
+            <p>If this privacy policy changes, the updated version will be published on this page with a revised date. Continued use of the app constitutes acceptance of any revised policy.</p>
+        </div>
+
+        <div class="card">
+            <h3>Contact</h3>
+            <p>Questions about this privacy policy? Contact us at <a class="email" href="mailto:nater303@gmail.com">nater303@gmail.com</a></p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2026 AdminKit &nbsp;·&nbsp; <a class="email" href="index.html">Support</a>
+    </footer>
+</body>
+</html>

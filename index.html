@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminKit — Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0d1117; color: #e6edf3; min-height: 100vh; }
+        header { background: #161b22; border-bottom: 1px solid #30363d; padding: 20px 24px; display: flex; align-items: center; gap: 14px; }
+        header img { width: 48px; height: 48px; border-radius: 12px; }
+        header h1 { font-size: 22px; font-weight: 700; }
+        header span { font-size: 13px; color: #8b949e; }
+        nav { background: #161b22; border-bottom: 1px solid #30363d; padding: 0 24px; display: flex; gap: 0; }
+        nav a { color: #8b949e; text-decoration: none; padding: 12px 16px; font-size: 14px; border-bottom: 2px solid transparent; display: inline-block; }
+        nav a.active, nav a:hover { color: #58a6ff; border-bottom-color: #58a6ff; }
+        .container { max-width: 760px; margin: 40px auto; padding: 0 24px; }
+        h2 { font-size: 24px; margin-bottom: 8px; }
+        .subtitle { color: #8b949e; font-size: 15px; margin-bottom: 32px; }
+        .card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 24px; margin-bottom: 20px; }
+        .card h3 { font-size: 16px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+        .card p, .card li { color: #8b949e; font-size: 14px; line-height: 1.7; }
+        .card ul { padding-left: 18px; }
+        .card ul li { margin-bottom: 4px; }
+        a.email { color: #58a6ff; text-decoration: none; }
+        a.email:hover { text-decoration: underline; }
+        .badge { background: #1f6feb; color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 12px; font-weight: 600; }
+        footer { text-align: center; color: #8b949e; font-size: 13px; padding: 40px 24px; border-top: 1px solid #30363d; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>AdminKit</h1>
+            <span>Network &amp; Security Toolkit</span>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html" class="active">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+    </nav>
+    <div class="container">
+        <h2>Support</h2>
+        <p class="subtitle">We're here to help. Find answers below or contact us directly.</p>
+
+        <div class="card">
+            <h3>📬 Contact Us</h3>
+            <p>Have a question, found a bug, or want to request a feature?</p>
+            <br>
+            <p>Email: <a class="email" href="mailto:nater303@gmail.com">nater303@gmail.com</a></p>
+            <br>
+            <p>We typically respond within 1–2 business days.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 Network Tools</h3>
+            <ul>
+                <li><strong>Ping</strong> — Tests reachability to a host and measures round-trip time.</li>
+                <li><strong>Traceroute</strong> — Shows the path packets take to reach a destination. Note: intermediate IPs are not available in the App Store sandbox.</li>
+                <li><strong>DNS Lookup</strong> — Queries A, AAAA, MX, CNAME, TXT, NS, and SOA records.</li>
+                <li><strong>DNS Propagation</strong> — Checks how a domain resolves across 8 global resolvers simultaneously.</li>
+                <li><strong>Port Scanner</strong> — Scans TCP ports on any host.</li>
+                <li><strong>Subnet Calculator</strong> — Calculates network ranges from any IP/mask combination.</li>
+                <li><strong>Bonjour Browser</strong> — Discovers mDNS/Bonjour services on your local network.</li>
+                <li><strong>Latency Map</strong> — Measures TCP latency to major cloud datacenters worldwide.</li>
+                <li><strong>IP Geolocation</strong> — Geolocates any IP or looks up your own public IP.</li>
+                <li><strong>Wake-on-LAN</strong> — Sends a magic packet to wake a remote machine.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🔒 Security Tools</h3>
+            <ul>
+                <li><strong>SSL Inspector</strong> — Inspects TLS certificate chains and expiry dates.</li>
+                <li><strong>Cert Transparency</strong> — Searches certificate transparency logs for any domain.</li>
+                <li><strong>HTTP Headers</strong> — Fetches and analyzes HTTP response headers.</li>
+                <li><strong>JWT Decoder</strong> — Decodes JSON Web Token header and payload.</li>
+                <li><strong>Password Generator</strong> — Generates strong random passwords.</li>
+                <li><strong>Hash Calculator</strong> — Computes MD5, SHA-1, SHA-256, SHA-512, and HMAC.</li>
+                <li><strong>TOTP Generator</strong> — Generates time-based one-time passwords (RFC 6238).</li>
+                <li><strong>SSH Key Generator</strong> — Generates RSA or EC SSH key pairs.</li>
+                <li><strong>Cert Generator</strong> — Generates self-signed X.509 certificates for testing.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>💻 Terminal &amp; Connections</h3>
+            <ul>
+                <li><strong>SSH Terminal</strong> — Multi-tab SSH with split-pane support. Passwords are stored in the system Keychain.</li>
+                <li><strong>SFTP Browser</strong> — Browse and transfer files over SFTP.</li>
+                <li><strong>FTP Client</strong> — Connect to FTP servers.</li>
+                <li><strong>RDP</strong> — Launches Remote Desktop via Microsoft Remote Desktop.</li>
+                <li><strong>USB Console</strong> — Serial console via USB-to-Serial adapters (macOS) or TCP network bridge (iOS/macOS).</li>
+                <li><strong>Connection Manager</strong> — Save and manage connection profiles with encrypted export/import.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🔑 Free Trial &amp; Purchase</h3>
+            <p>AdminKit includes a <strong>14-day free trial</strong> with full access to all features. After the trial, a one-time purchase unlocks the app permanently — no subscription, no recurring charges.</p>
+            <br>
+            <p>To restore a previous purchase, tap <strong>Restore Purchase</strong> on the paywall screen.</p>
+        </div>
+
+        <div class="card">
+            <h3>📋 Known Limitations</h3>
+            <ul>
+                <li>Traceroute cannot show intermediate router IPs due to App Store sandbox restrictions.</li>
+                <li>Wi-Fi SSID scanning on macOS requires Location Services permission.</li>
+                <li>USB serial console requires a USB-to-Serial adapter on macOS. On iOS/iPadOS, connect via a TCP serial bridge (e.g., Raspberry Pi running ser2net).</li>
+                <li>RDP requires Microsoft Remote Desktop to be installed.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        &copy; 2026 AdminKit &nbsp;·&nbsp; <a class="email" href="privacy.html">Privacy Policy</a>
+    </footer>
+</body>
+</html>
